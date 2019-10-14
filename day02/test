@@ -1,0 +1,27 @@
+let {name,age:gender} = {name:'jj',age:'18'}
+console.log(name,gender);
+
+function ajax({url,method,success}){
+    console.log(url);
+    console.log(method);
+    console.log(success);
+}
+ajax({
+    url:'http://www.baidu.com',
+    method:'post',
+    success:function(){
+
+    }
+
+        })
+
+let obj = {
+
+realname:'jj',
+         address:{
+         province:'山西省',
+         city:'太原市',
+         area:'sj'
+         }
+}
+let {realname,address:{province}} = obj
